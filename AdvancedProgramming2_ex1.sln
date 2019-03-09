@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedProgramming2_ex1", "AdvancedProgramming2_ex1\AdvancedProgramming2_ex1.csproj", "{81F4F1A9-BAFE-49F6-986F-FA5FA178A071}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4563E436-1F61-4DDB-82FA-309E13879688}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\Advanced Programming ex1\ComposedMission.cs = ..\..\..\Desktop\Advanced Programming ex1\ComposedMission.cs
+		..\..\..\Desktop\Advanced Programming ex1\IMission.cs = ..\..\..\Desktop\Advanced Programming ex1\IMission.cs
+		..\..\..\Desktop\Advanced Programming ex1\MissionContainer.cs = ..\..\..\Desktop\Advanced Programming ex1\MissionContainer.cs
+		..\..\..\Desktop\Advanced Programming ex1\SingleMission.cs = ..\..\..\Desktop\Advanced Programming ex1\SingleMission.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81F4F1A9-BAFE-49F6-986F-FA5FA178A071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F4F1A9-BAFE-49F6-986F-FA5FA178A071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F4F1A9-BAFE-49F6-986F-FA5FA178A071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F4F1A9-BAFE-49F6-986F-FA5FA178A071}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68348D4E-46DE-42CB-8811-C140ED490E32}
+	EndGlobalSection
+EndGlobal
