@@ -8,34 +8,31 @@ namespace Excercise_1
 {
     public class SingleMission : IMission
     {
+        private const string MISSION_TYPE_NAME = "Single";
+
         public delegate double CalcFunc(double value);
 
         private readonly Func<double, double> func;
-        public string Name { get; private set; }
-        public string Type { get; private set; }
 
-        public SingleMission(Func<double,double> function, string name)
+        public event EventHandler<double> OnCalculate;
+
+        public string Name { get; private set; }
+        public string Type
+        {
+            
+            get { return SingleMission.MISSION_TYPE_NAME; }
+        }
+
+        public SingleMission(Func<double, double> function, string name)
         {
             this.func = function;
             this.Name = name;
-            this.Type = function.ToString();
-        }
-
-        event EventHandler<double> IMission.OnCalculate
-        {
-            add
-            {
-                throw new NotImplementedException();
-            }
-
-            remove
-            {
-                throw new NotImplementedException();
-            }
         }
 
         public double Calculate(double value)
         {
+            this.OnCalculate?.Invoke(this, value);
+
             return this.func(value);
         }
     }
