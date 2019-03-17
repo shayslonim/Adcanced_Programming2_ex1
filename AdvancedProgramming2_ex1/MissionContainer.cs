@@ -12,6 +12,11 @@ namespace Excercise_1
         //  public delegate double CalcFunc(double value);
         private Dictionary<string, Func<double, double>> funcsMap;
 
+        public FunctionsContainer()
+        {
+            this.funcsMap = new Dictionary<string, Func<double, double>>();
+        }
+
         public Func<double, double> this[string funcName]
         {
             get
@@ -22,7 +27,8 @@ namespace Excercise_1
                 }
                 else
                 {
-                    throw new Exception("Function not found");
+                    //The function does not exist, return the Id function.
+                    return value => value;
                 }
             }
             set
