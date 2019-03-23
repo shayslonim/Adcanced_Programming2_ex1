@@ -9,16 +9,25 @@ namespace Excercise_1
 
     public class FunctionsContainer
     {
-        //  public delegate double CalcFunc(double value);
-        private Dictionary<string, Func<double, double>> funcsMap;
+        //Using an IDictionary to map each string to a delegate
+        private IDictionary<string, Func<double, double>> funcsMap;
 
+        /// <summary>
+        /// The constructor of the FunctionsContainer.
+        /// Sets the funcsMap to be a new Dictionary.
+        /// </summary>
         public FunctionsContainer()
         {
             this.funcsMap = new Dictionary<string, Func<double, double>>();
         }
-
+        /// <summary>
+        /// Map between a string and a double-to-double function
+        /// </summary>
+        /// <param name="funcName">The chosen name for the function</param>
+        /// <returns>If there is a mapping - the matching funtion is returned. Otherwise, the Id function is returned.</returns>
         public Func<double, double> this[string funcName]
         {
+            
             get
             {
                 if (funcsMap.ContainsKey(funcName))
@@ -36,8 +45,11 @@ namespace Excercise_1
                 this.funcsMap[funcName] = value;
             }
         }
-
-        public IEnumerable<string> getAllMissions()
+        /// <summary>
+        /// Gives the collection of all the functions' names.
+        /// </summary>
+        /// <returns>A list of all the names of the functions</returns>
+        public ICollection<string> getAllMissions()
         {
             return this.funcsMap.Keys;
         }
