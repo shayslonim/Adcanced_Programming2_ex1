@@ -49,7 +49,7 @@ namespace Excercise_1
             }
         }
         /// <summary>
-        /// Gives the collection of all the functions' names.
+        /// Returns the collection of all the functions' names.
         /// </summary>
         /// <returns>A list of all the names of the functions</returns>
         public ICollection<string> getAllMissions()
