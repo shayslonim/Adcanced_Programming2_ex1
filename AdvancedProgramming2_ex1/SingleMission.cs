@@ -14,10 +14,9 @@ namespace Excercise_1
     {
         //This is the type of the single mission
         private const string MISSION_TYPE_NAME = "Single";
-        
-        private delegate double CalcFunc(double value);
 
-        private readonly Func<double, double> func;
+       //Func<double,double> is a delegate of type double and return type double
+        private Func<double, double> func;
 
         public event EventHandler<double> OnCalculate;
 
