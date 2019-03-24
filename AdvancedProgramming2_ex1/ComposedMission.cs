@@ -43,6 +43,7 @@ namespace Excercise_1
             this.funcsHolder.Add(function);
             return this;
         }
+
         /// <summary>
         ///Calculate the value of the functions composition and invoke the OnCalculate event
         /// </summary>
