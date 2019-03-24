@@ -36,6 +36,7 @@ namespace Excercise_1
                 }
                 else
                 {
+
                     //The function does not exist, return the Id function, and map between this name and the Id function.
                     Func<double,double> IdFunction =  (value => value);
                     this.funcsMap[funcName] = IdFunction;
